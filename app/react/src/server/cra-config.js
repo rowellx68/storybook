@@ -176,5 +176,8 @@ export function applyCRAWebpackConfig(baseConfig, configDir) {
       ...baseConfig.resolve,
       extensions: [...baseConfig.resolve.extensions, ...tsExtensions],
     },
+    resolveLoader: {
+      modules: ['node_modules', path.join(getReactScriptsPath(), 'node_modules')],
+    },
   };
 }
