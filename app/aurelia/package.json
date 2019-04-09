@@ -1,0 +1,38 @@
+{
+  "name": "@storybook/aurelia",
+  "version": "5.1.0-alpha.20",
+  "description": "Storybook for Aurelia: Develop Aurelia Components in isolation with Hot Reloading.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/storybooks/storybook.git",
+    "directory": "app/aurelia"
+  },
+  "license": "MIT",
+  "main": "dist/client/index.js",
+  "jsnext:main": "src/client/index.js",
+  "bin": {
+    "build-storybook": "./bin/build.js",
+    "start-storybook": "./bin/index.js",
+    "storybook-server": "./bin/index.js"
+  },
+  "scripts": {
+    "prepare": "node ../../scripts/prepare.js"
+  },
+  "dependencies": {
+    "@storybook/core": "^5.0.6",
+    "@storybook/node-logger": "^5.0.6",
+    "aurelia-bootstrapper": "^2.3.3",
+    "aurelia-loader-nodejs": "^1.0.1",
+    "aurelia-webpack-plugin": "^3.0.0",
+    "common-tags": "^1.8.0",
+    "css-loader": "^2.1.1",
+    "global": "^4.3.2",
+    "html-loader": "^0.5.5",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
